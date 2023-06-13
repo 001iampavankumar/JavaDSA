@@ -6,6 +6,7 @@ public class EvenOrOdd {
     public static void main(String[] args) {
        EvenOrOdd_NtoM();
        evenOrOdd();
+
     }
 
     static void EvenOrOdd_NtoM(){
