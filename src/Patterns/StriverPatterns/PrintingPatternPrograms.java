@@ -2,6 +2,43 @@ package Patterns.StriverPatterns;
 
 import java.util.Scanner;
 class PatternPrograms{
+    void pattern_22(int n){
+
+        for(int i = n;i>=1;i--){
+
+/*            for(int spaces = 0;spaces<=(n-i);spaces++){
+                System.out.print("  ");
+            }*/
+
+            for(int side = n;side>i;side--){
+                System.out.print(side+" ");
+            }
+            for(int j = 1;j<=(i*2 -1);j++){
+                System.out.print(i+" ");
+            }
+            for(int side = i+1;side<=n;side++){
+                System.out.print(side+" ");
+            }
+            System.out.println();
+        }
+
+        for(int i = 2;i<=n;i++){
+/*            for(int spaces = 0;spaces<=(n-i);spaces++){
+                System.out.print("  ");
+            }*/
+
+            for(int side = n;side>i;side--){
+                System.out.print(side+" ");
+            }
+            for(int j = (i*2 -1);j>=1;j--){
+                System.out.print(i+" ");
+            }
+            for(int side = i+1;side<=n;side++){
+                System.out.print(side+" ");
+            }
+            System.out.println();
+        }
+    }
     void pattern_20(int n) {
 
         for (int row = 1; row <= n; row++) {
@@ -36,7 +73,6 @@ class PatternPrograms{
             System.out.println();
         }
     }
-
     void pattern_21(int n){
         for(int row = 1;row<=n;row++){
             for(int col = 1;col<=n;col++){
@@ -158,47 +194,8 @@ public class PrintingPatternPrograms {
 
         System.out.print("Enter no of rows: ");
         int n = sc.nextInt();
-        pattern_21(n);
+        pp.pattern_17(n);
 
     }
-
-    static void pattern_21(int n){
-
-        for(int i = n;i>=1;i--){
-
-/*            for(int spaces = 0;spaces<=(n-i);spaces++){
-                System.out.print("  ");
-            }*/
-
-            for(int side = n;side>i;side--){
-                System.out.print(side+" ");
-            }
-            for(int j = 1;j<=(i*2 -1);j++){
-                System.out.print(i+" ");
-            }
-            for(int side = i+1;side<=n;side++){
-                System.out.print(side+" ");
-            }
-            System.out.println();
-        }
-
-        for(int i = 2;i<=n;i++){
-/*            for(int spaces = 0;spaces<=(n-i);spaces++){
-                System.out.print("  ");
-            }*/
-
-            for(int side = n;side>i;side--){
-                System.out.print(side+" ");
-            }
-            for(int j = (i*2 -1);j>=1;j--){
-                System.out.print(i+" ");
-            }
-            for(int side = i+1;side<=n;side++){
-                System.out.print(side+" ");
-            }
-            System.out.println();
-        }
-    }
-
 }
 
