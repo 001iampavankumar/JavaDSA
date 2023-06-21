@@ -1,4 +1,4 @@
-package arrays.BasicPrograms;
+package Arrays.BasicPrograms;
 import java.util.Scanner;
 public class PrintNonRepeatingElements {
     public static void main(String[] args) {
