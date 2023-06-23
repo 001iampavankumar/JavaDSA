@@ -23,9 +23,13 @@ public class MaxAndMinSumOfNMinusOneElements {
         for(int i = 0;i<a.length;i++){
             for(int j = 0;j<a.length;j++){
                 if(i!=j){
+                    System.out.print(a[j]+" ");
                     sum = sum + a[j];
                 }
             }
+            System.out.println(" : "+sum);
+            System.out.println();
+
             if(sum>max){
                 max = sum;
             }
