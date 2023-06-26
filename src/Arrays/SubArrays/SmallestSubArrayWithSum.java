@@ -37,12 +37,11 @@ public class SmallestSubArrayWithSum {
         }
 
         if(count==a.length+1){
-            return;
+            System.out.println("");
         }
         for(int i = start;i<=end;i++){
             System.out.print(a[i]+" ");
         }
-        return;
     }
     public static void main(String[] args) {
 
