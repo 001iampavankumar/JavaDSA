@@ -1,4 +1,75 @@
 package Arrays.TwoSortedArrays;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class NonRepeatedElements {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the first array
+        int n = scanner.nextInt();
+        int[] arrayA = new int[n];
+        for (int i = 0; i < n; i++) {
+            arrayA[i] = scanner.nextInt();
+        }
+
+        // Read the second array
+        int m = scanner.nextInt();
+        int[] arrayB = new int[m];
+        for (int i = 0; i < m; i++) {
+            arrayB[i] = scanner.nextInt();
+        }
+
+        // Find non-repeated elements
+        List<Integer> nonRepeatedElements = findNonRepeatedElements(arrayA, arrayB);
+
+        // Print the non-repeated elements
+        for (int element : nonRepeatedElements) {
+            System.out.print(element + " ");
+        }
+    }
+
+    private static List<Integer> findNonRepeatedElements(int[] arrayA, int[] arrayB) {
+        List<Integer> nonRepeatedElements = new ArrayList<>();
+        int i = 0, j = 0;
+
+        while (i < arrayA.length && j < arrayB.length) {
+            if (arrayA[i] < arrayB[j]) {
+                nonRepeatedElements.add(arrayA[i]);
+                i++;
+            } else if (arrayA[i] > arrayB[j]) {
+                nonRepeatedElements.add(arrayB[j]);
+                j++;
+            } else {
+                i++;
+                j++;
+            }
+        }
+
+        while (i < arrayA.length) {
+            nonRepeatedElements.add(arrayA[i]);
+            i++;
+        }
+
+        while (j < arrayB.length) {
+            nonRepeatedElements.add(arrayB[j]);
+            j++;
+        }
+
+        return nonRepeatedElements;
+    }
+}
+
+
+
+
+
+
+
+/*
+package Arrays.TwoSortedArrays;
 import java.util.Scanner;
 public class NonRepeatedElements {
 
@@ -60,3 +131,4 @@ public class NonRepeatedElements {
     }
 
 }
+*/
