@@ -1,7 +1,7 @@
-//package Arrays.SubArrays;
+package Arrays.SubArrays;
 import java.util.Scanner;
 
-public class Main {
+public class SmallestSubArrayWithSum {
 
     static void smallestSubArray(int[] a,int res){
 
