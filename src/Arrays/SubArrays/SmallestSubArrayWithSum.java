@@ -1,7 +1,7 @@
-package Arrays.SubArrays;
+//package Arrays.SubArrays;
 import java.util.Scanner;
 
-public class SmallestSubArrayWithSum {
+public class Main {
 
     static void smallestSubArray(int[] a,int res){
 
@@ -37,7 +37,8 @@ public class SmallestSubArrayWithSum {
         }
 
         if(count==a.length+1){
-            System.out.println("");
+            System.out.println("No subarray found.");
+            return;
         }
         for(int i = start;i<=end;i++){
             System.out.print(a[i]+" ");
