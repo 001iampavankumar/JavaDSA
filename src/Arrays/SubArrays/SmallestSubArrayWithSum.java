@@ -25,7 +25,7 @@ public class SmallestSubArrayWithSum {
                 }
 
                 //checking sum with given sum
-                if(sum == -res || sum==res){
+                if( sum==res){
                     //count is for finding minimum sub array
                     if(count>j-i+1){
                         start = i;
