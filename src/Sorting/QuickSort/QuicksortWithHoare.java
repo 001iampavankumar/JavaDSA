@@ -7,7 +7,7 @@ public class QuicksortWithHoare {
 
 
         //we must need to take first element as pivot
-        int pivot = arr[high];
+        int pivot = arr[low];
 
         //this "i" will keep track of smaller elements
         int i = low-1;
@@ -54,7 +54,7 @@ public class QuicksortWithHoare {
             int p = partition(arr,low,high);
 
             //this will arrange the left half of elements
-            quickSort(arr,low,p-1);
+            quickSort(arr,low,p);
 
             //this will arrange the right half of elements
             quickSort(arr,p+1,high);
